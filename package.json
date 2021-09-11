@@ -1,0 +1,31 @@
+{
+  "name": "umdify",
+  "version": "1.0.0",
+  "repository": "git@github.com:fjc0k/umdify.git",
+  "license": "MIT",
+  "author": "Jay Fong <fjc0kb@gmail.com>",
+  "main": "index.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{css,less,scss,sass,html,htm,vue,yml,yaml,json,md}": [
+      "prettier --write"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^7",
+    "haoma": "^3.4.3",
+    "husky": "^4",
+    "lint-staged": "^10",
+    "prettier": "^2",
+    "standard-version": "^9",
+    "typescript": "^4"
+  }
+}
