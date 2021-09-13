@@ -78,6 +78,8 @@ async function main() {
       })
       await bundleDts.close()
 
+      await fs.copyFile('README.md', `dist/${pkg.package}/README.md`)
+
       await fs.writeJSON(
         `dist/${pkg.package}/package.json`,
         {
