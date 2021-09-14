@@ -85,7 +85,9 @@ async function main() {
         {
           name: `@umdify/${pkg.package}`,
           description: require(`${pkg.package}/package.json`).description,
-          version: require(`${pkg.package}/package.json`).version,
+          version: `${
+            require(`${pkg.package}/package.json`).version
+          }-${Date.now()}`,
           main: 'umd.js',
           types: 'umd.d.ts',
           homepage: 'https://github.com/fjc0k/umdify',
