@@ -6,4 +6,8 @@ export const packages: Array<{
     package: 'posthtml',
     umd: 'posthtml',
   },
+  {
+    package: 'graphemer',
+    umd: 'Graphemer',
+  },
 ]

@@ -98,7 +98,7 @@ async function main() {
         },
         { spaces: 2 },
       )
-      await exec('npm', ['publish', `dist/${pkg.package}`], {
+      await exec('npm', ['publish', `./dist/${pkg.package}`], {
         stdio: 'inherit',
       })
     }),

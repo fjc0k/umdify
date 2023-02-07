@@ -24,6 +24,7 @@
     ]
   },
   "dependencies": {
+    "graphemer": "^1.4.0",
     "posthtml": "^0.16.5"
   },
   "devDependencies": {
